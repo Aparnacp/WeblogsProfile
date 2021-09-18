@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./../css/shared.css" />
+    <link rel="stylesheet" href="./pstyle.css" />
+    <title>PRICING</title>
+    <style>
+      .toggle {
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          src="https://randomuser.me/api/portraits/women/76.jpg"
+          alt="user"
+        />
+      </div>
+      <ul>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="./../blog/blog.html">Blog</a></li>
+        <li><a href="./../contact/contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+    </header>
+    <!-- Testimonial -->
+    <div class="container">
+      <section id="testimonials">
+        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h5 class="testimonial-text">
+                WebLogs courses are well structured and taught by excellent
+                faculty.
+              </h5>
+              <img
+                class="testimonial-picture"
+                src="./../images/profile2.jpeg"
+                alt="woman"
+              /><em style="color: #163172">Shiela, Delhi</em>
+            </div>
+            <div class="carousel-item">
+              <h5 class="testimonial-text">
+                WebLogs has experienced faculty who take care of every aspect of
+                training program.
+              </h5>
+              <img
+                class="testimonial-picture"
+                src="./../images/profile1.jpeg"
+                alt="man"
+              /><em style="color: #163172"> Peter, LA</em>
+            </div>
+            <div class="carousel-item">
+              <h5 class="testimonial-text">
+                WebLogs is an awesome place to learn designing and development
+                of web pages.
+              </h5>
+              <img
+                class="testimonial-picture"
+                src="./../images/profile1.jpeg"
+                alt="profile3"
+              /><em style="color: #163172">Rachel, Shanghai</em>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#testimonial-carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              ><i style="color: #163172" class="fa fa-angle-left fa-4x"></i
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#testimonial-carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              ><i style="color: #163172" class="fa fa-angle-right fa-4x"></i
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <!-- Pricing section -->
+      <section id="pricing">
+        <h2 class="pricing-header">Check out our package pricing.</h2>
+        <p>Customize the plans according to your needs.</p>
+        <div class="row">
+          <div class="pricing-column col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="pricing-type">Basic</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="pricing-amount">₹ 10000</h2>
+                <p>One month Course</p>
+                <p>HTML and CSS</p>
+                <p>Limited access to resources</p>
+                <p>Online notes available</p>
+                <button
+                  class="btn btn-lg btn-block btn-outline-primary pricingbtn"
+                >
+                  Sign up for Trial
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-column col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="pricing-type">Intermediate</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="pricing-amount">₹ 25000</h2>
+                <p>Two Months Course</p>
+                <p>HTML, CSS and JS</p>
+                <p>Unlimited access to resources</p>
+                <p>Online tests and notes available</p>
+                <button class="btn btn-primary btn-lg btn-block pricingbtn">
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-column col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="pricing-type">Advanced</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="pricing-amount">₹ 40000</h2>
+                <p>Three month course</p>
+                <p>Full Stack Programming</p>
+                <p>Unlimited access to resources</p>
+                <p>Online tests and notes available</p>
+                <button class="btn btn-lg btn-block btn-primary pricingbtn">
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="#">Support</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="./../script.js"></script>
+  </body>
+</html>

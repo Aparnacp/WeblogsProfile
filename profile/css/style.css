@@ -1,0 +1,187 @@
+.cta-btn {
+  background-color: white;
+  color: #2a427c;
+  font-weight: bold;
+}
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* Product section */
+
+#products {
+  padding: 0% auto;
+  background-color: white;
+  display: flex;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  /* margin-right: 10px; */
+  /* padding: 20px 0; */
+}
+
+.product-box {
+  text-align: center;
+  margin: 0 0px;
+  width: 200px;
+  height: 300px;
+  /* border: 1px solid #2a427c; */
+  background-color: white;
+  flex: 1;
+}
+
+.product-name {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: #2a427c;
+  margin-top: 2rem;
+}
+
+.product-desc {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+p {
+  font-weight: 500;
+  color: #ff1b68;
+  padding: 0px 5px;
+}
+
+.fonticon {
+  padding: 15px 0;
+  color: #2a427c;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .product-box {
+    margin: 0px auto;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* Key Features Section */
+
+#key-features {
+  background: #ff1b68;
+  /* margin-top: 1rem; */
+  padding: 1rem;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 2rem;
+  text-align: center;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 178px;
+  height: 178px;
+  /* border: 2px solid #424242; */
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    /* display: inline-block; */
+    width: 30%;
+    max-width: 25rem;
+  }
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.topimagecontainer {
+  width: 100%;
+}
+
+.topimage {
+  width: 100%;
+  background-size: contain;
+}

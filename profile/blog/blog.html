@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./../css/shared.css" />
+    <link rel="stylesheet" href="./bstyles.css" />
+    <title>BLOG</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          src="https://randomuser.me/api/portraits/women/76.jpg"
+          alt="user"
+        />
+      </div>
+      <ul>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="./../pricing/pricing.html">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="./../contact/contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>Weblogs</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>HTML Video Tag</h2>
+            <h5>How to use video controls, Sep 18, 2021</h5>
+            <video
+              style="margin: auto; display: block"
+              width="50%"
+              height="240"
+              controls
+              muted
+            >
+              <source
+                src="https://www.w3schools.com/tags/movie.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <p>
+              This article explains about how to use video tag in HTML document.
+            </p>
+            <p>
+              <abbr title="Hyper Text Markup Language"
+                >HTML5 has introduced video and audio tags that can be used to
+                embed video and audio files into the HTML document. One such
+                example is given here.</abbr
+              ><span id="dots"> ... </span
+              ><p><span id="more">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus et quae officiis voluptas amet ex? Sit quasi
+                  minima animi accusamus.
+                </span
+              ></p>
+            </p>
+            <i onclick="likeBtn(this)" class="fa fa-thumbs-up"></i>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+          <div class="card">
+            <h2>HTML Audio Tag</h2>
+            <h5>How to use audio tag, 18 Sep, 2021</h5>
+            <audio style="margin: auto; display: block" controls>
+              <source src="horse.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+              scel<span id="dots">...</span
+              ><span id="more"
+                >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+                imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                venenatis. Integer fringilla congue eros non fermentum. Sed
+                dapibus pulvinar nibh tempor porta.</span
+              >
+            </p>
+            <i onclick="likeBtn(this)" class="fa fa-thumbs-up"></i>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+          <div class="card" style="margin-bottom: 100px">
+            <h2>HTML Table - colspan & rowspan</h2>
+            <h5>Complex HTML Tables, 18 Sep, 2021</h5>
+            <table>
+              <tr>
+                <td colspan="6">Table Heading...</td>
+              </tr>
+              <tr>
+                <td colspan="2">Row 1 Col 1</td>
+                <td colspan="2">Row 1 Col 2</td>
+                <td colspan="2">Row 1 Col 3</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Row 2 Col 1</td>
+                <td colspan="2">Row 2 Col 2</td>
+                <td colspan="2">Row 2 Col 3</td>
+              </tr>
+              <tr>
+                <td colspan="3">Row 3 Col 1</td>
+                <td colspan="3">Row 3 Col 2</td>
+              </tr>
+            </table>
+            <p></p>
+            <i onclick="likeBtn(this)" class="fa fa-thumbs-up"></i>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="">
+              <img
+                src="https://randomuser.me/api/portraits/women/76.jpg"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <p>
+              Some text about me in culpa qui officia deserunt mollit anim..
+            </p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg">Click here to see the text</div>
+            <br />
+            <div class="fakeimg">Image</div>
+            <br />
+            <div class="fakeimg">Image</div>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer" style="">
+      <ul class="main-footer__links">
+        <li class="main-footer__link">
+          <a href="#">Support</a>
+        </li>
+        <li class="main-footer__link">
+          <a href="#">Terms of Use</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./../script.js"></script>
+    <script src="./bscript.js"></script>
+  </body>
+</html>

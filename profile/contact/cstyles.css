@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 1rem;
+}
+.signup-title {
+  color: #163172;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.signup-form {
+  padding: 0rem;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-form input[type="terms"] + label {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* .signup-form input[type="checkbox"] */
+.signup-form input[id*="terms"],
+.signup-form input[id*="terms"] + label {
+  display: inline-block;
+  width: auto;
+  vertical-align: bottom;
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form select,
+.signup-form radio-item {
+  outline: none;
+  background: #99b1e9;
+  border-color: #163172;
+}
+
+.signup-form select {
+  color: #ff5454;
+}
+
+.signup-form input[type="checkbox"] {
+  border: 1px solid #ccc;
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.signup-form input[type="checkbox"]:checked {
+  background: #205deb;
+  border: #163172;
+}
+
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
+
+/* .signup-form button[type='submit'] {
+  display: block;
+  margin-top: 1rem;
+} */
+
+@media (min-width: 40rem) {
+  .signup-form {
+    display: block;
+    margin: auto;
+    width: 25rem;
+  }
+}
+
+.radio-item {
+  display: inline;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.radio-item input[type="radio"] {
+  display: inline;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  border-color: #ff5454;
+}
+
+#ritem {
+  margin-left: 0;
+}
+
+.radio-item label {
+  display: inline;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.radio-item input[type="radio"]:checked {
+  background-color: #205deb;
+  border: 1px solid #99b1e9;
+}
+
+.button {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #163172;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #163172;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #163172;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
+form i {
+  color: #ff5454;
+  margin-left: 30px;
+  cursor: pointer;
+}

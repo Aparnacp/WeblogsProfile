@@ -1,0 +1,86 @@
+header {
+  background-image: url(./../images/webpage.webp);
+  height: 300px;
+  background-size: contain;
+  background-repeat: repeat;
+}
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+/*testimonial section */
+
+#testimonials {
+  text-align: center;
+  background-color: #f4eeff;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonial-picture {
+  width: 25%;
+  height: 10%;
+  border-radius: 100%;
+  margin: 55px 35px 35px;
+}
+
+.testimonial-text {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #163172;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+#press {
+  background-color: #f4eeff;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.testimonial-press {
+  width: 10%;
+  margin: 0px 20px 50px;
+  height: 20%;
+  border-radius: 50%;
+}
+
+/*pricing section*/
+
+#pricing {
+  /* padding: 80px 150px; */
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  background-color: white;
+  color: #163172;
+}
+.pricing-header {
+  /* padding-bottom: 20px; */
+}
+.pricing-column {
+  /* padding: 5% 8%; */
+}
+.pricingbtn {
+  width: 100%;
+}
+.btn-primary {
+  background-color: #163172 !important;
+  border-color: #163172 !important;
+}
+.btn-outline-primary {
+  border-color: #163172 !important;
+  color: #163172 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: white !important;
+  color: #163172;
+}
+.card-header {
+  background-color: #f4eeff !important;
+}
