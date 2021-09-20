@@ -37,18 +37,6 @@ header {
   font-family: "Montserrat-Bold", sans-serif;
 }
 
-#press {
-  background-color: #f4eeff;
-  text-align: center;
-  padding-bottom: 5px;
-}
-.testimonial-press {
-  width: 10%;
-  margin: 0px 20px 50px;
-  height: 20%;
-  border-radius: 50%;
-}
-
 /*pricing section*/
 
 #pricing {
